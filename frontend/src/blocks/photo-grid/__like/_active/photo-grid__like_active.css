@@ -1,0 +1,10 @@
+.photo-grid__like_active {
+  background-image: url("../../../../images/like_active.svg");
+  width: 22px;
+  height: 19px;
+  align-self: center;
+}
+
+.photo-grid__like_active:hover {
+  opacity: 0.5;
+}

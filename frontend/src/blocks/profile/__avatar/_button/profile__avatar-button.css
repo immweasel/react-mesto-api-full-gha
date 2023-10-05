@@ -1,0 +1,37 @@
+.profile__avatar-button {
+  align-self: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+
+.profile__avatar-button::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../../../../images/editAvatar.svg);
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profile__avatar-button:hover::before {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+  }
+}
