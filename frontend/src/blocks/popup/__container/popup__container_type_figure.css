@@ -1,9 +1,0 @@
-.popup__container_type_figure {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  width: auto;
-  background-color: transparent;
-}
