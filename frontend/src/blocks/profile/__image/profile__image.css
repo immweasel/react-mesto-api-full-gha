@@ -6,6 +6,7 @@
   margin-bottom: 22.25px;
   object-position: center center;
   transition: opacity 0.3s ease-in-out;
+  object-fit: cover;
 }
 
 .profile__image:hover {
