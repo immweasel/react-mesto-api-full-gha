@@ -1,0 +1,29 @@
+.groups {
+  margin: 0 auto;
+  padding: 0;
+  width: 282px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  row-gap: 20px;
+  padding-bottom: 48px;
+}
+
+@media screen and (min-width: 768px) {
+  .groups {
+    width: 584px;
+    gap: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .groups {
+    width: 928px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .groups {
+    width: 880px;
+    padding-bottom: 66px;
+  }
+}

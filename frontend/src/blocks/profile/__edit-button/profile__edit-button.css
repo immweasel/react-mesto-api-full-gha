@@ -1,0 +1,30 @@
+.profile__edit-button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+  transition: opacity ease-in-out 0.3s;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  background-image: url("../../../images/vector_edit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile__edit-button:hover {
+  opacity: 0.6;
+}
+
+.profile__edit-button:active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1280px) {
+  .profile__edit-button {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../../images/Vector.svg");
+  }
+}

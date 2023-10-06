@@ -1,0 +1,11 @@
+.header {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 28px;
+  margin-bottom: 38.25px;
+  width: 68%;
+  padding-bottom: 41px;
+  border-bottom: 1px solid rgb(84, 84, 84, 0.7);
+  display: flex;
+  justify-content: space-between;
+}

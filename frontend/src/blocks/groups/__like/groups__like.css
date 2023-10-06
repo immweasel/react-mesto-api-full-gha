@@ -1,0 +1,9 @@
+.groups__like {
+  all: unset;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 19px;
+  transition: opacity 0.2s ease-in-out;
+  width: 22px;
+  background-image: url("../../../images/Vector_like.svg");
+}

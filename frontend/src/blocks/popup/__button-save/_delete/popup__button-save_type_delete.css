@@ -1,0 +1,11 @@
+.popup__button-save_type_delete {
+  width: 360px;
+  margin: 0 auto 0;
+}
+
+@media screen and (max-width: 470px) {
+  .popup__button-save_type_delete {
+    width: 243px;
+    margin: 0 auto 0;
+  }
+}

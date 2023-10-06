@@ -1,0 +1,9 @@
+.popup__button-save-disabled {
+  background-color: #fff;
+  color: #b3b3b3;
+  opacity: 1;
+  user-select: none;
+  cursor: default;
+  border: 1px solid #b3b3b3;
+  border-radius: 2px;
+}

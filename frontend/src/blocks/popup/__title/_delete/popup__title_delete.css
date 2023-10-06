@@ -1,0 +1,10 @@
+.popup__title_delete {
+  padding: 34px 0 35px;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 470px) {
+  .popup__title_delete {
+    font-size: 1.13em;
+  }
+}
