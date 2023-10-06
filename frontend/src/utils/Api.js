@@ -109,7 +109,8 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://localhost:3000',
+  baseUrl: "https://api.immweasel.nomoredomainsrocks.ru",
+  // 'http://localhost:3000',
   // 'https://mesto.nomoreparties.co/v1/cohort-69',
   // headers: {
   //   authorization: '1a325d4c-959b-42a2-8e6f-2cd070905828',

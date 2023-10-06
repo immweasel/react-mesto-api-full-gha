@@ -11,6 +11,6 @@
 
 IP-адрес 51.250.23.211
 
-Frontend https://kira.nomoredomainsrocks.ru
+Frontend https://immweasel.nomoredomainsrocks.ru
 
-Backend https://api.kira.nomoredomainsrocks.ru
+Backend https://api.immweasel.nomoredomainsrocks.ru

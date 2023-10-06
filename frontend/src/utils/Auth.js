@@ -1,5 +1,5 @@
-export const BASE_URL = "http://localhost:3000";
-
+export const BASE_URL = "https://api.immweasel.nomoredomainsrocks.ru";
+// "http://localhost:3000";
 // "https://auth.nomoreparties.co"
 
 function checkResponse(res) {
