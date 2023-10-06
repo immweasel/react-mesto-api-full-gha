@@ -18,7 +18,7 @@ module.exports.createCard = (req, res, next) => {
     .then((card) => {
       Card.findById(card._id)
         .orFail()
-        .populate('owner')
+        // .populate('owner')
         .then((data) => res.status(HTTP_STATUS_CREATED).send(data))
         .catch((err) => {
           if (err instanceof mongoose.Error.DocumentNotFoundError) {
