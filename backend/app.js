@@ -35,6 +35,10 @@ mongoose.connect(DB_URL, {
   useUnifiedTopology: true,
 });
 
+app.use(requestLogger);
+
+app.use(limiter);
+
 app.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('Сервер сейчас упадёт');
@@ -59,10 +63,6 @@ app.post('/signup', celebrate({
 }), createUser);
 
 app.use(auth);
-
-app.use(requestLogger);
-
-app.use(limiter);
 
 app.use('/users', require('./routes/users'));
 app.use('/cards', require('./routes/cards'));
