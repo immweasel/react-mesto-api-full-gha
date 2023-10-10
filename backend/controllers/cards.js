@@ -6,7 +6,7 @@ const NotFoundError = require('../errors/NotFoundError');
 const ForbiddenError = require('../errors/ForbiddenError');
 
 module.exports.getCard = (req, res, next) => {
-  Card.find({})
+  Card.find({}).sort({ createdAt: -1 })
   // .populate(['owner', 'likes'])
     .then((cards) => res.status(HTTP_STATUS_OK).send(cards))
     .catch(next);
@@ -68,9 +68,7 @@ module.exports.deleteCard = (req, res, next) => {
           res.status(HTTP_STATUS_OK).send({ message: 'Карточка удалена' });
         })
         .catch((err) => {
-          if (err instanceof mongoose.Error.DocumentNotFoundError) {
-            next(new NotFoundError(`Карточки с таким id ${req.params.cardId} нет `));
-          } else if (err instanceof mongoose.Error.CastError) {
+          if (err instanceof mongoose.Error.CastError) {
             next(new BadRequestError(`Некорректный id у карточки ${req.params.cardId} `));
           } else {
             next(err);
