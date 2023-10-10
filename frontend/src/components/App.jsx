@@ -61,7 +61,7 @@ function App() {
         })
         .catch(console.error);
     }
-  },);
+  }, []);
 
   function handleEditProfileClick() {
     setEditPopupOpen(true);
